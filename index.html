@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="topo">
+      <img href="./IMAGENS/ibi.png" alt="logo">
+      <h1 class="titulo">CRUD de Planos de Internet</h1>
+    </div>
+  </header>
+
+
+
+  <div class="tabelaPlanos">
+    <button class="botaoNovoPlano"><a href=".modalCadastrar">Novo Plano</a>
+      <script> openModalBtnNovo.addEventListener("click", () => modal.showModal());
+      </script>
+    </button>
+  </div>
+  <dialog open id="modalCadastrar">
+    <h1 class="tituloModal">Cadastrar Plano de Internet</h1>
+    <button class="fecharModal">X</button>
+    <label class="label" for="nomePlano">Nome do Plano</label>
+    <input class="inputNome" type="text" id="nomePlano" placeholder="Digite o nome do plano" required />
+    <label class="label" for="descricao">Descrição</label>
+    <input class="inputDescricao" type="text" id="descricao" placeholder="Digite a descrição do plano" required />
+    <label class="label" for="velocidadeInternet">Velocidade de Internet</label>
+    <input class="inputVelocidade" type="text" id="velocidadeInternet" placeholder="Digite o valor numérico da velocidade" required />
+
+    <button class="botaoCadastrar">Cadastrar</button>
+
+
+  </dialog>
+  <script src="script.js"></script>
+  <table>
+    <tr>
+      <th>Nome do Plano</th>
+      <th>Descrição</th>
+      <th>Velocidade</th>
+      <th>Ações</th>
+    </tr>
+    <tr>
+      <td>Plano 1 + Ibiplay</td>
+      <td>Lorem Ipsum</td>
+      <td>330mb</td>
+      <td><img class="iconeEditar" href="./IMAGENS/4277132.png" alt="icone1"><img class="iconeLixo" href="./IMAGENS/126468.png" alt="icone2"></td>
+    </tr>
+    <tr>
+      <td>Plano 2 + Ibiplay</td>
+      <td>Lorem Ipsum</td>
+      <td>440mb</td>
+      <td><img class="iconeEditar" href="./IMAGENS/4277132.png" alt="icone1"><img class="iconeLixo" href="./IMAGENS/126468.png" alt="icone2"></td>
+    </tr>
+  </table>
+
+  </div>
+
+
+
+  <dialog open id="modalEditar">
+    <h1 class="tituloModal">Editar Plano de Internet</h1>
+    <button class="fecharModal">X</button>
+    <label class="label" for="nomePlano">Nome do Plano</label>
+    <input class="inputNome" type="text" id="nomePlano" placeholder="Plano 1 + Ibiplay" required />
+    <label class="label" for="descricao">Descrição</label>
+    <input class="inputDescricao" type="text" id="descricao" placeholder="Lorem Ipsum" required />
+    <label class="label" for="velocidadeInternet">Velocidade de Internet</label>
+    <input class="inputVelocidade" type="text" id="velocidadeInternet" placeholder="330mb" required />
+
+    <button class="botaoCadastrar">Editar</button>
+
+
+
+
+
+  </dialog>
+  <script src="javascript.js"></script>
+
+
+</body>
+
+</html>

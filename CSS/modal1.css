@@ -1,0 +1,79 @@
+.modalCadastrar {
+  text-align: left;
+  border-radius: 4px;
+  border-color: #cecece;
+}
+
+.tituloModal {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  position: relative;
+}
+
+.label,
+.input {
+  display: block;
+  margin-top: 30px;
+}
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.inputNome {
+  border-radius: 4px;
+  padding: 10px 100px;
+  margin-top: 10px;
+  border-width: 1px solid #cecece;
+}
+
+.inputDescricao {
+  border-radius: 4px;
+  padding: 60px 100px 60px 100px;
+  margin-top: 10px;
+  border-width: 1px solid #cecece;
+}
+
+.inputVelocidade {
+  border-radius: 4px;
+  padding: 10px 100px;
+  margin-top: 10px;
+  border-width: 1px solid #cecece;
+}
+
+.botaoCadastrar {
+  display: block;
+  margin-top: 30px;
+  align-self: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: blue;
+  border-style: none;
+  color: white;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.botaoNovoPlano > a {
+  color: white;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.fecharModal {
+  background-color: white;
+  position: absolute;
+  margin-right: -20px;
+  border: none;
+  font-size: 1rem;
+  top: 2rem;
+  right: 2rem;
+  height: 1rem;
+  aspect-ratio: 1/1;
+  margin-left: 30px;
+}
